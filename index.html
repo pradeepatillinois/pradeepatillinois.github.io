@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<style>
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 10px;
+  padding: 20px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+
+<body>
+
+<h1>Data Visualization Project</h1>
+
+<p>This data visualization project presents an overview on Daily Avg Precipiration,
+   Daily Avg Min Temperature & Daily average Max Temperature for all US States.</p>
+<p>Click on the below button to go back to Data Overview page which presents an overview of precipitation,Min & Max temperatures for all 50 US states</p>
+<input type=button class ="button" onClick="parent.location='Clusteredbarchart.html'" value='Data Overview' align = "right" width="60" height="48">
+<p>From the overview page click on drill down to navigate to webpage to view historic line chart providing data per state for over 80 years. </p>
+<p>The project uses clustered bar chart to provide an overview data of weather parameters for all 50 states</p>
+<p>While it uses multi series line charts to provide information on how the measures changed over time per state</p>
+</body>
+</html>

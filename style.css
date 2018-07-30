@@ -1,0 +1,42 @@
+html,body {
+
+  margin: 0;
+  height: 100%;
+}
+
+g.hidden line,
+g.hidden path {
+
+display: none;
+
+}
+
+
+line {
+  stroke : brown;
+  stroke-width: 3;
+}
+
+g.tick line {
+
+  stroke: green;
+}
+
+g.tick text {
+
+font-size: 12:px;
+fill: blue;
+}
+
+line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+
+path {
+
+stroke-width: 2px;
+fill: none;
+
+}
